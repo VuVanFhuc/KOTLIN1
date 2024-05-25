@@ -1,6 +1,7 @@
 package ph34858.laptrinhkotlin.lab3Ph34858.bai7Ph34858
 
 import java.util.Scanner
+
 fun main() {
     val scanner = Scanner(System.`in`)
     val listCBGV = mutableListOf<CBGV>()
@@ -39,6 +40,7 @@ fun main() {
                     println("---------------------")
                 }
             }
+
             2 -> {
                 // Thêm cán bộ giáo viên
                 print("Nhập mã số giáo viên: ")
@@ -70,6 +72,7 @@ fun main() {
 
                 println("Cán bộ giáo viên đã được thêm vào danh sách.")
             }
+
             3 -> {
                 // Xóa cán bộ giáo viên
                 println("Xóa cán bộ giáo viên:")
@@ -100,6 +103,7 @@ fun main() {
                     println("Không tìm thấy cán bộ giáo viên có mã số $maTinhLuong trong danh sách.")
                 }
             }
+
             else -> {
                 println("Lựa chọn không hợp lệ.")
             }

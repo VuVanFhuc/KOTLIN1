@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +15,68 @@
         android:theme="@style/Theme.LapTrinhKotLin"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.LapTrinhKotLin">
+            android:name=".ASM.screens.Product"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Congrats"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Cart"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Home"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Login"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Register"
+            android:exported="false" />
+        <activity
+            android:name=".ASM.screens.Welcom"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ASM.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab4Ph34858.bai3"
+            android:exported="false" />
+        <activity
+            android:name=".lab4Ph34858.bai2"
+            android:exported="false" />
+        <activity
+            android:name=".lab4Ph34858.bai1"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitapbuoi5.buoi5bai1"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitapbuoi4.bai1"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitapbuoi4.bai2"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitapbuoi4.bai3"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitaplab3.bai2"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitaplab3.bai3"
+            android:exported="false" />
+        <activity
+            android:name=".lab3Ph34858.baitaplab3.bai1"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
